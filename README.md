@@ -90,5 +90,3 @@ Final selected model: **Optuna-tuned XGBoost Classifier**
 Made with ❤️ by **Habib Ghulam Bheek**
 
 ---
-
-This version is crisp, professional, and has **just enough storytelling** to prove you *know why you made certain decisions*.
