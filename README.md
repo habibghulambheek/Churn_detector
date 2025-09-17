@@ -10,7 +10,7 @@ This project predicts whether a customer will churn (leave the service) based on
 * **Exploratory Data Analysis (EDA):**
 
   * Explored churn distribution across categorical and numerical features.
-  * Visualized churn percentages by features such as contract type, payment method, internet service, etc.
+  * Visualized churn percentages by features such as payment method, internet service, etc.
   * Converted and cleaned missing `TotalCharges` values.
 
 * **Modeling Journey:**
@@ -26,9 +26,9 @@ This project predicts whether a customer will churn (leave the service) based on
 
 The dataset is **imbalanced** (more customers stay than churn).
 
-* A high **accuracy** can be misleading (e.g., predicting “No churn” for everyone gives \~73% accuracy).
-* **Recall** is important (don’t miss churners), but focusing only on it increases false alarms.
-* **Precision** is also important (avoid wrongly flagging loyal customers as churners).
+* A high **accuracy** can be misleading (e.g., predicting “No churn” for everyone gives a high accuracy).
+* **Recall** is important, but focusing only on it increases false alarms.
+* **Precision** is also important.
 
 By choosing **f0.75**, we slightly weigh precision more than recall, giving a **balanced, business-friendly metric** that reflects the real-world cost of churn prediction.
 
