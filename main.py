@@ -31,7 +31,7 @@ root.title("Churn Detector")
 root.geometry("820x720")
 root.iconbitmap(icon_path)
 root.bind('<Escape>', lambda e: root.attributes('-fullscreen', False))
-
+root.bind('<F11>', lambda e: root.attributes('-fullscreen', True))
 # ----------------- Scrollable area (Canvas + Scrollbar) -----------------
 container = Frame(root, bg=BG)
 container.pack(fill="both", expand=True, padx=10, pady=8)
