@@ -7,8 +7,8 @@ pd.set_option("display.max_columns", None)
 curr_dir = os.getcwd()
 path = os.path.join(curr_dir, "Dataset.csv")
 df = pd.read_csv(path)
-df = df.drop(columns="customerID")
-df["TotalCharges"] = df["TotalCharges"].replace(" ", '0')
+mean_total_charges = "2279.734304"
+df["TotalCharges"] = df["TotalCharges"].replace(" ", mean_total_charges)
 df["TotalCharges"] = pd.to_numeric(df["TotalCharges"])
 
 # print(df.head(10))
