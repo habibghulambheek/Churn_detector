@@ -15,7 +15,7 @@ df["TotalCharges"] = pd.to_numeric(df["TotalCharges"])
 # print(df.head(10))
 # print(df.dtypes)
 # print(df.info())
-print(df.describe(include="all"))
+# print(df.describe(include="all"))
 
 # Exploring the reason why people churn
 # churn clossification
